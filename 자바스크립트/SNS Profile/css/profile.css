@@ -1,0 +1,89 @@
+body{
+    background: #f7f9fc;
+}
+
+.card{
+    background: #fff;
+    box-shadow: 5px 5px 10px 1px lightgray;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+}
+
+.card h2{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.simple-info{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.contact-box{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.loc{
+    color: #6fbaf8;
+}
+
+.loc i{
+    font-size: larger;
+}
+
+.contact{
+    background: #6fbaf8;
+    color: white;
+    border: none;
+}
+
+.categorys{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.category{
+    font-weight: bold;
+}
+
+.nav div{
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    color: #ddd;
+}
+
+.nav .menu1{
+    color: #6fbaf8;
+}
+
+.skills span{
+    border-style: solid;
+    border-color: #aaa;
+    border-radius: 2em;
+    font-size: small;
+    padding: 0.3em 0.7em;
+}
+
+.linkedout i{
+    font-size: 70px;
+    color: #6fbaf8;
+}
+
+.linkedout a{
+    text-decoration: none;
+    color: #6fbaf8;
+    font-weight: bold;
+}
+
+.friend img{
+    object-fit: contain;
+}
+
+@media screen and (min-width : 768px) {
+    .categorys{
+        border-style: solid;
+        border-width: 0px 0px 0px 2px;
+        border-color: #eee;
+    }
+}

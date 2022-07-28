@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+        <div class="alert-box" id="alert1">
+            <p id="alert1title">알림창</p>
+            <button  
+                id="close"   
+                style="float : right">
+                닫기
+            </button>
+        </div>
+        <button onclick="alert1Open('block', '로그인하세요.')">
+        버튼 1
+        </button>
+        <button onclick="alert1Open('block', '비밀번호를 입력하세요.')">
+        버튼 2
+        </button>
+        
+        <script type="text/javascript">
+            document.getElementById('close').addEventListener('click', function(){
+                alert1Open('none', 0);
+            });
+            function alert1Open(state, fill){
+                document.getElementById('alert1').style.display = state;
+                document.getElementById('alert1title').innerHTML = fill;
+            }
+            
+        </script>
+    </body>
+</html>
