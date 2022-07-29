@@ -1,0 +1,8 @@
+$메인컬러 : #2a4bc3;
+$서브컬러 : #444444;
+$basic-size : 20px;
+
+body{
+    background-color: $메인컬러;
+    font-size: ($basic-size * 2);
+}
