@@ -26,4 +26,35 @@
     padding: 10px 20px;
     border-radius: 4px;
     background-color: $color;
+    color: rgba($color: #000000, $alpha: 0.6);
+}
+
+@mixin alert-message($str) {
+    content: $str;
+    font-weight: bold;
+    margin-right: 0.5em
+}
+
+.alert-succeed{
+    @include base-alert(lightgreen);
+
+    &::before{
+        @include alert-message('Well done!');
+    }
+}
+
+.alert-attention{
+    @include base-alert(skyblue);
+
+    &::before{
+        @include alert-message('Heads up!');
+    }
+}
+
+.alert-warning{
+    @include base-alert(wheat);
+
+    &::before{
+        @include alert-message('Warning!');
+    }
 }

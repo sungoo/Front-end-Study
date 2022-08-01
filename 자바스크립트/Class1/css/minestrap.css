@@ -1,0 +1,81 @@
+.m0 {
+  margin: 0;
+}
+
+.m1 {
+  margin: 0.5em;
+}
+
+.m2 {
+  margin: 1em;
+}
+
+.mx1 {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.mx2 {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.my1 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.my2 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.row {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-6 {
+  flex: 1 1 50%;
+  background: #ddd;
+  border-style: solid;
+  border-width: 1px;
+  margin: 0;
+}
+
+.col-4 {
+  flex: 1 1 33%;
+  background: #ddd;
+  border-style: solid;
+  border-width: 1px;
+  margin: 0;
+}
+
+.col-3 {
+  flex: 1 1 25%;
+  background: #ddd;
+  border-style: solid;
+  border-width: 1px;
+  margin: 0;
+}
+
+.col-2 {
+  flex: 1 1 16%;
+  background: #ddd;
+  border-style: solid;
+  border-width: 1px;
+  margin: 0;
+}
+
+.d-f {
+  display: flex;
+}
+
+.f-y-center {
+  align-items: center;
+}
+
+.f-x-center {
+  justify-content: center;
+}/*# sourceMappingURL=minestrap.css.map */
