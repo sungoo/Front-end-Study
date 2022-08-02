@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+h1:hover{
+    animation-name: back-and-force;
+    animation-duration: 1s;
+
+}
+
+@keyframes back-and-force{
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(-100px);
+    }
+    65%{
+        transform: translateX(100px);
+    }
+    80%{
+        transform: translateX(-40px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+
+.wiggle{
+    width: 200px;
+    height: 100px;
+    color: white;
+    background: rgb(115, 196, 196);
+    font-size: xx-large;
+    border: none;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+}
+
+.wiggle:hover{
+    animation-name: wigglewiggle;
+    animation-duration: 1s;
+}
+
+@keyframes wigglewiggle{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(10deg);
+    }
+    50%{
+        transform: rotate(-10deg);
+    }
+    85%{
+        transform: rotate(5deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.plus{
+    font-size: 10em;
+    position: absolute;
+    left: 50%;
+    margin-top: 100px;
+    margin-left: -0.45em;
+}
+
+.plus:hover{
+    animation-name: plus-zooming;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes plus-zooming{
+    0%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(-10deg);
+    }
+    70%{
+        transform: rotate(50deg) scale(2);
+    }
+    100%{
+        transform: rotate(45deg) scale(1.8);
+    }
+}
+
+.nav{
+    position: fixed;
+    margin-left: 0;
+    margin-top: 0;
+    height: 100%;
+    width: 200px;
+    left: -100px;
+    transform: translate(0px);
+    background: #000;
+    color: white;
+    transition: transform 1s;
+}
+
+.nav:hover{
+    transform: translate(100px);
+}
+
+.nav h2{
+    float: right;
+    margin-right: 20px;
+    transform: translate(0px);
+    transition: transform 1s;
+}
+
+.nav:hover h2{
+    transform: translate(-50px);
+}
+
+.item{
+    clear: both;
+    transform: translate(0px);
+    transition: transform 1s;
+}
+
+.nav:hover .item{
+    animation-name: dinamic-item;
+    animation-duration: 1s;
+}
+
+@keyframes dinamic-item{
+    0%{
+        transform: translate(0px) skew(0px);
+    }
+    30%{
+        transform: translate(70px) skew(20px);
+    }
+    100%{
+        transform: translate(50px) skew(0px);
+    }
+}
