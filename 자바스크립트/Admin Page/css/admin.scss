@@ -3,12 +3,89 @@ body{
     padding: 0%;
 }
 
+.top{
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 2px 4px 1px gray;
+    padding: 10px;
+    padding-left: 5em;
+    input{
+        border-style: solid;
+        border-color: #ddd;
+        border-width: 1px;
+        border-radius: 3px;
+        padding: 0.7em 0.5em;
+        outline-style: none;
+        margin: 0%;
+    }
+    button{
+        margin: 0%;
+        padding: 0.85em 1em;
+        background: rgb(2, 2, 26);
+        color: white;
+        border: none;
+        border-radius: 0px 5px 5px 0px;
+        transform: translate(-12px);
+    }
+    .space{
+        flex-grow: 1;
+    }
+    .top-menu{
+        background: #ccc;
+        width: 3em;
+        height: 2em;
+        flex-grow: 0;
+        
+    }
+    .alam{
+        
+    }
+    .mail{
+        
+    }
+    .username{
+        width: 7em;
+        flex-shrink: 0;
+    }
+}
+
 .nav{
+    z-index: 2;
     background: darkblue;
     color: white;
     position: fixed;
+    width: 10em;
     height: 100%;
     ul{
         list-style: none;
+        font-size: large;
+        font-weight: bold;
+        padding: 0;
+        padding-left: 1em;
+    }
+    li{
+        margin-bottom: 2em;
+        i{
+            float: right;
+            margin-right: 1em;
+            transition: transform .5s;
+        }
+        span{
+            transform: rotate(180deg);
+            transition: transform .5s;
+        }
+    }
+    transform: translate(-6.5em);
+    transition: transform .5s;
+}
+
+.nav:hover{
+    transform: translate(0em);
+    i{
+        transform: translate(-5.5em);
+    }
+    span{
+        transform: translate(3em) rotate(0deg);
     }
 }
